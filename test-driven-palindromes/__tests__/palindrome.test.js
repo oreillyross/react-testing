@@ -1,4 +1,4 @@
-const palindromes = require("./palindrome");
+const palindromes = require("../palindrome");
 
 describe("palindromes", () => {
   test("correctly identifies one palindrome", () => {
