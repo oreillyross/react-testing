@@ -4,8 +4,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jest": {
+     "modulePathIgnorePatterns": ["eslint"]
+  },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . && prettier-eslint --list-different **/*.js",
+    "format": "prettier-eslint --write **/*.js"
   },
   "keywords": [],
   "author": "",
